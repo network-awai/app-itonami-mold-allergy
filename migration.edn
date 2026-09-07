@@ -1,4 +1,5 @@
 {:schema "etzhayyim.migration/v1"
  :source {:repository "etzhayyim/root" :revision "57d57fc47f4b2544f2f71e8905c279f5cdf090f4" :path "60-apps/etzhayyim-project-mold-allergy" :tree "60fa1311efb35a5e59e89786854d54a0dfb15265" :tracked-files 15 :bytes 21129}
  :destination {:repository "etzhayyim/com-etzhayyim-app-mold-allergy"}
- :identity {:allowed-additions ["README.edn" "migration.edn"]}}
+ :identity {:allowed-additions ["README.edn" "migration.edn"]}
+ :post-migration [{:date "2026-09-07" :change "svelte -> cljs (ADR-2608260900)" :note "tree no longer byte-identical to :source: appview/etzhayyim-wasm-mold-allergy-m0ldalg1/svelte/ removed, appview/etzhayyim-wasm-mold-allergy-m0ldalg1/cljs/ added, svelte/src/routes/xrpc/[...path]/+server.ts moved to appview/etzhayyim-wasm-mold-allergy-m0ldalg1/src/xrpc-dispatcher.ts"}]}
