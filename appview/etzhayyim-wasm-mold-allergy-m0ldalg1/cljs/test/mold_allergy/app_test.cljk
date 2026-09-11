@@ -19,7 +19,7 @@
     (is (= [] @(rf/subscribe [:app/routes])))
     (is (= [] @(rf/subscribe [:app/vars])))
     (is (false? @(rf/subscribe [:app/xrpc?])))
-    (is (= "appview/etzhayyim-wasm-mold-allergy-m0ldalg1/cljs/src/mold_allergy/app.cljs"
+    (is (= "appview/etzhayyim-wasm-mold-allergy-m0ldalg1/cljs/src/mold_allergy/app.cljk"
            @(rf/subscribe [:app/relative-path])))))
 
 (deftest routes-sub-reflects-db
