@@ -14,7 +14,7 @@
   what this migration itself changed:
 
   - `:app/relative-path` now names this file
-    (`appview/etzhayyim-wasm-mold-allergy-m0ldalg1/cljs/src/mold_allergy/app.cljs`),
+    (`appview/etzhayyim-wasm-mold-allergy-m0ldalg1/cljs/src/mold_allergy/app.cljk`),
     not the deleted Svelte one.
   - `:app/xrpc?` is now false. This migration's wrangler.jsonc drops the
     `main` key entirely (see that file's header comment): the only
@@ -51,7 +51,7 @@
    :app/routes []
    :app/vars []
    :app/xrpc? false
-   :app/relative-path "appview/etzhayyim-wasm-mold-allergy-m0ldalg1/cljs/src/mold_allergy/app.cljs"})
+   :app/relative-path "appview/etzhayyim-wasm-mold-allergy-m0ldalg1/cljs/src/mold_allergy/app.cljk"})
 
 (rf/reg-event-db
  :initialize-db
