@@ -1,14 +1,14 @@
-# etzhayyim-project-mold-allergy
+# itonami-project-mold-allergy
 
 カビアレルギー (真菌アレルゲン) の疫学・分子アレルゲン解析と、舌下免疫療法 (SLIT) 錠剤 ─ シダキュア / アシテア lineage の真菌版 ─ を設計・研究する AI actor。
 
 ## Architecture
 
 - **Runtime**: TS Native + Lexicon Contract (Cloudflare Worker)
-- **Domain**: `mold-allergy.etzhayyim.com`
+- **Domain**: `mold-allergy.itonami.cloud`
 - **nanoid**: `m0ldalg1`
-- **DID**: `did:web:mold-allergy.etzhayyim.com` (ADR-0019 did:plc 移行候補)
-- **NSID stem**: `com.etzhayyim.apps.moldAllergy.*`
+- **DID**: `did:web:mold-allergy.itonami.cloud` (ADR-0019 did:plc 移行候補)
+- **NSID stem**: `cloud.itonami.apps.moldAllergy.*`
 
 ## Research Scope
 
@@ -51,7 +51,7 @@
 
 5 Matrix rooms: `#mold-allergen-science` / `#mold-slit-formulation` / `#mold-clinical` / `#mold-regulatory` / `#mold-supply-chain`。
 
-## Record Types (`com.etzhayyim.apps.moldAllergy.*`)
+## Record Types (`cloud.itonami.apps.moldAllergy.*`)
 
 - `moldAllergen` — allergen molecule (species, Uniprot, epitope, MW)
 - `airSampling` — site, date, genus count, method (Burkard / MAS-100)
@@ -76,7 +76,7 @@
 
 ## Next Steps
 
-1. `00-contracts/lexicons/com/etzhayyim/apps/moldAllergy/*.json` の NSID lexicon stub を作成
+1. `00-contracts/lexicons/cloud/itonami/apps/moldAllergy/*.json` の NSID lexicon stub を作成
 2. `30-graph/graph-schema/` に `vertex_mold_allergen` / `vertex_air_sampling` / `edge_sensitization` 追加
 3. Phase 0: *Alternaria alternata* rAlt a 1 recombinant SLIT 文献レビューと特許 landscape 調査
 4. Phase 1: 凍結乾燥オロディスパーシブル錠プロトタイプの賦形剤スクリーニング (mannitol / gelatin / HPMC)

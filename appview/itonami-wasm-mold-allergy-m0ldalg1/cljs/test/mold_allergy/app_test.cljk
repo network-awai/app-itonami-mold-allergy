@@ -12,14 +12,14 @@
     (rf/dispatch-sync [:initialize-db])
     (is (= app/default-db @rf-db/app-db))
     (is (= "Mold Allergy M0ldalg1" @(rf/subscribe [:app/title])))
-    (is (= "etzhayyim-wasm-mold-allergy-m0ldalg1" @(rf/subscribe [:app/name])))
-    (is (= "etzhayyim-project-mold-allergy" @(rf/subscribe [:app/project])))
+    (is (= "itonami-wasm-mold-allergy-m0ldalg1" @(rf/subscribe [:app/name])))
+    (is (= "itonami-project-mold-allergy" @(rf/subscribe [:app/project])))
     (is (= "appview" @(rf/subscribe [:app/kind])))
     (is (= 0 @(rf/subscribe [:app/route-count])))
     (is (= [] @(rf/subscribe [:app/routes])))
     (is (= [] @(rf/subscribe [:app/vars])))
     (is (false? @(rf/subscribe [:app/xrpc?])))
-    (is (= "appview/etzhayyim-wasm-mold-allergy-m0ldalg1/cljs/src/mold_allergy/app.cljk"
+    (is (= "appview/itonami-wasm-mold-allergy-m0ldalg1/cljs/src/mold_allergy/app.cljk"
            @(rf/subscribe [:app/relative-path])))))
 
 (deftest routes-sub-reflects-db

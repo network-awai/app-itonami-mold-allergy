@@ -1,5 +1,5 @@
 (ns mold-allergy.app
-  "com-etzhayyim-app-mold-allergy appview — reagent + re-frame, view built
+  "app-itonami-mold-allergy appview — reagent + re-frame, view built
   from jp-go-dds (デジタル庁デザインシステム) hiccup.
 
   Faithful port of the previous SvelteKit scaffold's status page
@@ -14,7 +14,7 @@
   what this migration itself changed:
 
   - `:app/relative-path` now names this file
-    (`appview/etzhayyim-wasm-mold-allergy-m0ldalg1/cljs/src/mold_allergy/app.cljk`),
+    (`appview/itonami-wasm-mold-allergy-m0ldalg1/cljs/src/mold_allergy/app.cljk`),
     not the deleted Svelte one.
   - `:app/xrpc?` is now false. This migration's wrangler.jsonc drops the
     `main` key entirely (see that file's header comment): the only
@@ -44,14 +44,14 @@
 
 (def default-db
   {:app/title "Mold Allergy M0ldalg1"
-   :app/project "etzhayyim-project-mold-allergy"
-   :app/name "etzhayyim-wasm-mold-allergy-m0ldalg1"
+   :app/project "itonami-project-mold-allergy"
+   :app/name "itonami-wasm-mold-allergy-m0ldalg1"
    :app/kind "appview"
    :app/route-count 0
    :app/routes []
    :app/vars []
    :app/xrpc? false
-   :app/relative-path "appview/etzhayyim-wasm-mold-allergy-m0ldalg1/cljs/src/mold_allergy/app.cljk"})
+   :app/relative-path "appview/itonami-wasm-mold-allergy-m0ldalg1/cljs/src/mold_allergy/app.cljk"})
 
 (rf/reg-event-db
  :initialize-db
