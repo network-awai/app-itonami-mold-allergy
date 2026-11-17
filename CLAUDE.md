@@ -1,3 +1,5 @@
+> **2026-11-17 (AWAI-3079):** この app は Tauri v3 の local app に変わりました。現在の構成とコマンドは [README.md](README.md) を見てください。Cloudflare Worker・Agent・Matrix room・record type に関する以下の記述は、以前の設計と研究計画の記録で、今のコードとは一致しません。
+
 # itonami-project-mold-allergy
 
 カビアレルギー (真菌アレルゲン) の疫学・分子アレルゲン解析と、舌下免疫療法 (SLIT) 錠剤 ─ シダキュア / アシテア lineage の真菌版 ─ を設計・研究する AI actor。
