@@ -22,7 +22,7 @@
     "APP_CAPABILITIES": "[\"bpmn-dispatch\",\"allergen-characterization\",\"epidemiology-query\",\"slit-formulation-design\",\"clinical-trial-protocol-drafting\",\"literature-mining\"]",
     "APP_DESCRIPTION": "Mold-Allergy research agent. Fungal allergen catalog, air sampling, and SLIT candidate workflows run in BPMN + Zeebe Python.",
     "APP_DISPLAY_NAME": "Mold-Allergy",
-    "APP_EMBED_URL": "https://m0ldalg1.etzhayyim.com/?embed=1",
+    "APP_EMBED_URL": "https://m0ldalg1.itonami.cloud/?embed=1",
     "APP_FRAMEWORK": "cljs-reagent-re-frame-jp-go-dds",
     "APP_NANOID": "m0ldalg1",
     "APP_PERFORMER_TYPE": "service",
@@ -30,12 +30,12 @@
     "APP_TEMPLATE": "",
     "APP_UI_TYPE": "appview",
     "APP_VERSION": "0.1.0",
-    "AGENTGATEWAY_MCP_ROUTER_URL": "https://mcp.etzhayyim.com/xrpc/com.etzhayyim.mcp.message"
+    "AGENTGATEWAY_MCP_ROUTER_URL": "https://mcp.itonami.cloud/xrpc/cloud.itonami.mcp.message"
   },
   "routes": [
     {
-      "pattern": "mold-allergy.etzhayyim.com/*",
-      "zone_name": "etzhayyim.com"
+      "pattern": "mold-allergy.itonami.cloud/*",
+      "zone_name": "itonami.cloud"
     }
   ],
   "assets": {

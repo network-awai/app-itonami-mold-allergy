@@ -1,6 +1,6 @@
 {
-  "@context": "https://etzhayyim.com/ns/kotodama/v1",
-  "@id": "did:web:mold-allergy.etzhayyim.com",
+  "@context": "https://itonami.cloud/ns/kotodama/v1",
+  "@id": "did:web:mold-allergy.itonami.cloud",
   "framework": "ts-thin-edge",
   "component": {
     "path": "src/app.ts"
@@ -46,7 +46,7 @@
     "description": "Mold-Allergy — AI research agent for fungal allergen science and SLIT tablet design (Shidakure / Acitea lineage)",
     "displayName": "Mold-Allergy",
     "isBot": true,
-    "operator": "etzhayyim.com"
+    "operator": "itonami.cloud"
   },
   "project": "mold-allergy",
   "runtimeType": "worker",
@@ -96,13 +96,13 @@
         "app.bsky.feed.post",
         "app.bsky.feed.repost",
         "app.bsky.graph.follow",
-        "com.etzhayyim.apps.moldAllergy.moldAllergen",
-        "com.etzhayyim.apps.moldAllergy.airSampling",
-        "com.etzhayyim.apps.moldAllergy.patientProfile",
-        "com.etzhayyim.apps.moldAllergy.slitCandidate",
-        "com.etzhayyim.apps.moldAllergy.trialProtocol",
-        "com.etzhayyim.apps.moldAllergy.adverseEvent",
-        "com.etzhayyim.apps.moldAllergy.literatureNote"
+        "cloud.itonami.apps.moldAllergy.moldAllergen",
+        "cloud.itonami.apps.moldAllergy.airSampling",
+        "cloud.itonami.apps.moldAllergy.patientProfile",
+        "cloud.itonami.apps.moldAllergy.slitCandidate",
+        "cloud.itonami.apps.moldAllergy.trialProtocol",
+        "cloud.itonami.apps.moldAllergy.adverseEvent",
+        "cloud.itonami.apps.moldAllergy.literatureNote"
       ]
     }
   },

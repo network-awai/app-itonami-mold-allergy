@@ -1,4 +1,4 @@
-{:schema "etzhayyim.repository/v1"
- :name "com-etzhayyim-app-mold-allergy"
+{:schema "itonami.repository/v1"
+ :name "app-itonami-mold-allergy"
  :kind :app
  :canonical-metadata :edn}

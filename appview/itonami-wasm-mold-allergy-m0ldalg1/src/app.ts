@@ -5,7 +5,7 @@ interface Env { DISPATCHER_URL?: string; DISPATCHER_INTERNAL_SECRET?: string | S
 interface ExportedHandler<E> { fetch(req: Request, env: E): Promise<Response>; }
 
 const APP = "moldAllergy";
-const NSID_PREFIX = "com.etzhayyim.apps.moldAllergy.";
+const NSID_PREFIX = "cloud.itonami.apps.moldAllergy.";
 
 export default {
   async fetch(req: Request, env: Env): Promise<Response> {
@@ -13,7 +13,7 @@ export default {
     if (url.pathname === "/health" || url.pathname === "/healthz" || url.pathname === "/readyz" || url.pathname === "/_app/meta") {
       return json({
         ok: true,
-        actor: "did:web:mold-allergy.etzhayyim.com",
+        actor: "did:web:mold-allergy.itonami.cloud",
         nanoid: env.APP_NANOID ?? "m0ldalg1",
         execution: "edge-proxy+agentgateway-mcp+langserver",
         businessLogic: "40-engine/kotoba/crates/kotoba-kotodama/py/src/kotodama/ingest/mold_allergy.py",
@@ -47,7 +47,7 @@ async function bodyWithQuery(req: Request, url: URL): Promise<Record<string, unk
 }
 
 async function proxyToDispatcher(env: Env, nsid: string, body: Record<string, unknown>): Promise<Response> {
-  const base = (env.DISPATCHER_URL ?? "https://dispatcher.etzhayyim.com").replace(/\/+$/, "");
+  const base = (env.DISPATCHER_URL ?? "https://dispatcher.itonami.cloud").replace(/\/+$/, "");
   const headers: Record<string, string> = { "content-type": "application/json" };
   const trust = await internalTrustSecret(env);
   if (trust) headers["x-internal-trust"] = trust;
